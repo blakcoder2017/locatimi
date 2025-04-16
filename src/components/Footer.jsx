@@ -1,14 +1,14 @@
 import React from "react";
 
 const Footer = () => {
+
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-gray-800 text-white p-4">
-      <p className="text-center">© 2023 My Application. All rights reserved.</p>
-      <div className="flex justify-center space-x-4 mt-2">
-        <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-        <a href="#" className="text-gray-400 hover:text-white">Terms of Service</a>
-        <a href="#" className="text-gray-400 hover:text-white">Contact Us</a>
-      </div>
+      <div className="text-center text-white p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+      {currentYear} © Locatimi  
+      <a className="text-white" href="https://github.com/blakcoder2017/"> Abubakari Sherifdeen</a>
+    </div>
     </footer>
   );
 }   

@@ -4,7 +4,7 @@ import locationReducer from "./locationSlice";
 
 const store = configureStore({
     reducer: {
-        location: locationReducer,
+        locations: locationReducer,
     },
 });
 
