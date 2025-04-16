@@ -3,13 +3,13 @@ import { getFirestore } from 'firebase/firestore';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDV1VnhO71mi3Y1pFnRj57bufwy-cYeRrg",
-    authDomain: "locatimi-50202.firebaseapp.com",
-    projectId: "locatimi-50202",
-    storageBucket: "locatimi-50202.firebasestorage.app",
-    messagingSenderId: "796201283975",
-    appId: "1:796201283975:web:fda5082e503b2d2a2b6322",
-    measurementId: "G-M7CDGS4JRN"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
   };
 
 const app = initializeApp(firebaseConfig);
