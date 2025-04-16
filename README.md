@@ -1,12 +1,40 @@
-# React + Vite
+# Locatimi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Locatimi** is a web-based app for managing and displaying locations. It features a clean, responsive interface with real-time location updates and dynamic search.
 
-Currently, two official plugins are available:
+Built with React and Vite, the app uses Redux for state management and Firestore for real-time data storage. Interactive maps are powered by the Google Maps API, while Bootstrap ensures a sleek, responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- View and manage multiple locations on an interactive map
+- Real-time updates using Firestore
+- Dynamic location search
+- Responsive design with Bootstrap
+- Smooth routing with React Router
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **React + Vite** – Frontend framework
+- **Redux** – State management
+- **React Router** – Client-side routing
+- **Firestore** – Realtime database
+- **Google Maps API** – Interactive map features
+- **Bootstrap** – UI styling
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/blakcoder2027/locatimi.git
+   cd locatimi
+   npm install
+
+## Add your Firebase config in a .env file
+  VITE_FIREBASE_API_KEY=your_api_key
+  VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+  VITE_FIREBASE_PROJECT_ID=your_project_id
+  VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+  VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+  VITE_FIREBASE_APP_ID=your_app_id
+  VITE_GOOGLE_MAPS_API_KEY=your_maps_api_key
